@@ -21,6 +21,7 @@ The decision to use a Linux distribution was made due to licensing reasons. Ubun
 2. **Network Configuration**
    - Initially, the virtual machine was limited to LAN access, as confirmed by ping tests.
    - After adding a firewall rule to allow WAN connectivity, the virtual machine was able to update its packages and download the Vault package.
+   - The rule was created very openendedly to facilitate future projects on the InternalManagement network.
   
 ![Vault diagram](/assets/images/firewallrule1.png)
 
@@ -37,7 +38,7 @@ The decision to use a Linux distribution was made due to licensing reasons. Ubun
    - Port `8200` was opened to allow access to Vault (firewall configuration was performed at some point).
 
 6. **Web UI**
-   - The Vault web UI was made accessible
+   - The Vault web UI was made accessible.
   
 ![Vault diagram](/assets/images/vaultwebui.png)
 
