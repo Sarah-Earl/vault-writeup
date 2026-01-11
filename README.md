@@ -39,5 +39,7 @@ The decision to use a Linux distribution was made due to licensing reasons. Ubun
 
 ## Future Work
 
-- Vault requires further configuration and setup via the web UI, which is accessible on the LAN.
+   - Currently accessing vault over HTTP, need to create and install a certificate to enable HTTPS, unable to do this at the moment as there is no certificate authority server.
+   - Configure LDAPS to allow users from the domain to sign in to Vault, unable to do this as there is currently no domain controller.
+   - Configure RBAC to control access of credentials to users.
 
