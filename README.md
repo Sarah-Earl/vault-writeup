@@ -33,9 +33,6 @@ The decision to use a Linux distribution was made due to licensing reasons. Ubun
    - Configured Vault (Basic File Backend)
    - Start and Enable Vault Service
    - Initialise Vault
-     
-5. **Firewall Configuration**
-   - Port `8200` was opened to allow access to Vault (firewall configuration was performed at some point).
 
 6. **Web UI**
    - The Vault web UI was made accessible.
