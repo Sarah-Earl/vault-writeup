@@ -11,6 +11,8 @@ For Vault to run within the homelab environment, a compatible operating system m
 - Ubuntu  
 - Debian  
 
+The decision to use a Linux distribution was made due to licensing reasons. Ubuntu was chosen over Debian as it is more widely used, Version 24 was used over 25 as it is a LTS release.
+
 ## Deployment Steps
 
 1. **Add Ubuntu 24.04 to Proxmox**
