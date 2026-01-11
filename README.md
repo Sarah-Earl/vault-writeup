@@ -20,7 +20,7 @@ The decision to use a Linux distribution was made due to licensing reasons. Ubun
 
 2. **Network Configuration**
    - Initially, the virtual machine was limited to LAN access, as confirmed by ping tests.
-   - After adding a firewall rule, the virtual machine obtained WAN connectivity.
+   - After adding a firewall rule to allow WAN connectivity, the virtual machine was able to update its packages and download the Vault package
 
 3. **Vault Installation**
    - Vault was installed in the VM using a community download link from the HashiCorp Vault website.
