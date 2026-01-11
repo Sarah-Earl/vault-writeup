@@ -53,7 +53,6 @@ vault --version
 ```
 sudo nano /etc/vault.d/vault.hcl
 ```
-
 ```
 storage "file" {
   path = "/opt/vault/data"
@@ -66,7 +65,6 @@ listener "tcp" {
 
 ui = true
 ```
-
 ```
 sudo mkdir -p /opt/vault/data
 sudo chown -R vault:vault /opt/vault
