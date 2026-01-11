@@ -16,7 +16,7 @@ The decision to use a Linux distribution was made due to licensing reasons. Ubun
 ## Deployment Steps
 
 1. **Add Ubuntu 24.04 to Proxmox**
-   - Ubuntu 24.04 was added to Proxmox using a script obtained from [Proxmon VE Helper-Scripts]([https://community-scripts.github.io/ProxmoxVE/scripts?id=ubuntu2404-vm).
+   - Ubuntu 24.04 was added to Proxmox using a script obtained from [Proxmox VE Helper-Scripts]([https://community-scripts.github.io/ProxmoxVE/scripts?id=ubuntu2404-vm).
 
 2. **Network Configuration**
    - Initially, the virtual machine was limited to LAN access, as confirmed by ping tests.
