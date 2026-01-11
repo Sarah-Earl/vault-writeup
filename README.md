@@ -29,16 +29,63 @@ The decision to use a Linux distribution was made due to licensing reasons. Ubun
    Vault was installed in the VM through the following steps:
 
    - Add HashiCorp Repo
-     '''bash
-     sudo apt update
-     sudo apt install -y gnupg software-properties-common wget
-     '''
-
+```
+sudo apt update
+sudo apt install -y gnupg software-properties-common wget
+```
+```
+wget -O- https://apt.releases.hashicorp.com/gpg | \
+gpg --dearmor | \
+sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
+```
+```
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
+https://apt.releases.hashicorp.com $(lsb_release -cs) main" | \
+sudo tee /etc/apt/sources.list.d/hashicorp.list
+```
    - Install Vault
+```
+sudo apt update
+sudo apt install vault
+```
+```
+vault --version
+```
    - Configured Vault (Basic File Backend)
-   - Start and Enable Vault Service
-   - Initialise Vault
+```
+sudo nano /etc/vault.d/vault.hcl
+```
+```
+storage "file" {
+  path = "/opt/vault/data"
+}
 
+listener "tcp" {
+  address     = "0.0.0.0:8200"
+  tls_disable = 1
+}
+
+ui = true
+```
+```
+sudo mkdir -p /opt/vault/data
+sudo chown -R vault:vault /opt/vault
+```
+   - Start and Enable Vault Service
+```
+sudo systemctl enable vault
+sudo systemctl start vault
+```
+```
+sudo systemctl status vault
+```
+   - Initialise Vault
+```
+export VAULT_ADDR=http://127.0.0.1:8200
+```
+```
+vault operator init
+```
 6. **Web UI**
    - The Vault web UI was made accessible.
   
