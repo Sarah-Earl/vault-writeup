@@ -20,15 +20,21 @@ The decision to use a Linux distribution was made due to licensing reasons. Ubun
 
 2. **Network Configuration**
    - Initially, the virtual machine was limited to LAN access, as confirmed by ping tests.
-   - After adding a firewall rule to allow WAN connectivity, the virtual machine was able to update its packages and download the Vault package
+   - After adding a firewall rule to allow WAN connectivity, the virtual machine was able to update its packages and download the Vault package.
 
 3. **Vault Installation**
-   - Vault was installed in the VM using a community download link from the HashiCorp Vault website.
+   Vault was installed in the VM through the following steps:
 
-4. **Firewall Configuration**
+   - Add HashiCorp Repo
+   - Install Vault
+   - Configured Vault (Basic File Backend)
+   - Start and Enable Vault Service
+   - Initialise Vault
+     
+5. **Firewall Configuration**
    - Port `8200` was opened to allow access to Vault (firewall configuration was performed at some point).
 
-5. **Web UI**
+6. **Web UI**
    - The Vault web UI was made accessible
 
 ## Future Work
