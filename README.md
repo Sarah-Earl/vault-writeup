@@ -50,7 +50,6 @@ sudo apt install vault
 vault --version
 ```
    - Configured Vault (Basic File Backend)
-
 ```
 sudo nano /etc/vault.d/vault.hcl
 ```
