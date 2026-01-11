@@ -29,6 +29,11 @@ The decision to use a Linux distribution was made due to licensing reasons. Ubun
    Vault was installed in the VM through the following steps:
 
    - Add HashiCorp Repo
+     '''
+     sudo apt update
+     sudo apt install -y gnupg software-properties-common wget
+     '''
+
    - Install Vault
    - Configured Vault (Basic File Backend)
    - Start and Enable Vault Service
