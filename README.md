@@ -89,7 +89,7 @@ The decision to use a Linux distribution was made due to licensing reasons. Ubun
     ```
 
 4. **Web UI**  
-    - The Vault web UI was made accessible.  
+    - The Vault web UI is accessible via the LAN as seen.
     
     ![Vault diagram](/assets/images/vaultwebui.png)
 
