@@ -1,3 +1,5 @@
+![Vault diagram](/assets/images/selfportrait.jpg)
+
 # Vault Deployment Overview
 
 Vault is a management tool that securely stores certificate keys and passwords, among other functionalities. Due to its strong security features, it was implemented as a credentials manager for a home lab **Proxmox Virtual Environment (PVE)** to enhance security and facilitate user access to the Proxmox environment.
@@ -30,3 +32,4 @@ For Vault to run within the homelab environment, a compatible operating system m
 ## Future Work
 
 - Vault requires further configuration and setup via the web UI, which is accessible on the LAN.
+
